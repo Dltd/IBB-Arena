@@ -37,7 +37,7 @@
     <button type="button" id="spinner3c" class="btn-info">Spinner 3 Clockwise</button>
     <button type="button" id="spinner3a" class="btn-primary">Spinner 3 Anti-Clockwise</button>
     <button type="button" id="spinner3off" class="btn-primary">Spinner 3 Off</button>
-   
+
 </div>
 </body>
 
@@ -54,7 +54,7 @@
                   console.log("Request successful:", data);
                   // You can handle the response data here if needed
               },
-        
+
           });
       }
 
@@ -115,11 +115,10 @@
 
       // Add more buttons with different URLs as needed
   });
-  var timerInterval; // Declare the timerInterval globally to access it in both functions
+var timerInterval; // Declare the timerInterval globally to access it in both functions
 
-function startTimer() {
-    def startTimer(length)
-    var duration = length * 1000; // 3 minutes in milliseconds
+function startTimer(length) {
+    var duration = length * 1000; // Convert length to milliseconds
     var timerDisplay = document.getElementById("timer");
 
     // Ensure that only one timer is running at a time
@@ -144,11 +143,10 @@ function startTimer() {
         duration -= 10; // Decrease the duration by 10 milliseconds
     }, 10); // Update the timer every 10 milliseconds
 }
-    function stopTimer() {
-        clearInterval(timerInterval);
-        alert("Timer stopped!");
+
+function stopTimer() {
+    clearInterval(timerInterval);
+    alert("Timer stopped!");
 }
+
 </script>
-
-
-
